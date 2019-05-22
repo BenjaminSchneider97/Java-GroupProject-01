@@ -1,6 +1,5 @@
 public class School {
 
-
     private String schoolName;
     private String schoolAddress;
 
@@ -24,5 +23,4 @@ public class School {
     public void setSchoolAddress(String schoolAddress){
         this.schoolAddress = schoolAddress;
     }
-
 }

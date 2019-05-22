@@ -1,30 +1,17 @@
 public class Subjects   {
 
-    private String name;
-    private int grades;
+    private String subjectName;
 
-
-    public Subjects(String name, int grades){
-        this.name = name;
-        this.grades = grades;
+    public Subjects(String subjectName){
+        this.subjectName = subjectName;
     }
 
-    public String getName(){
-        return this.name = name;
+    public String getSubjectName(){
+        return this.subjectName;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public void setSubjectName(String subjectName){
+        this.subjectName = subjectName;
     }
-
-    public int getGrades(){
-        return this.grades = grades;
-    }
-
-    public void setGrades(int grades){
-        this.grades = grades;
-    }
-
-
 }
 

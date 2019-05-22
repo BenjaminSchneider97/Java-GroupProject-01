@@ -3,11 +3,13 @@ public class Students {
     private String firstName;
     private String lastName;
     private String parentName;
+    private Class className;
 
-    public Students(String firstName, String lastName, String parentName){
+    public Students(String firstName, String lastName, String parentName, Class className){
         this.firstName = firstName;
         this.lastName = lastName;
         this.parentName = parentName;
+        this.className = className;
     }
 
     public String getFirstName() {
