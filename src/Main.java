@@ -48,9 +48,10 @@ public class Main {
         subject_math.put(judith.getStudentFirstName(), judith.calcGrade(30));
         subject_math.put(jenny.getStudentFirstName(), jenny.calcGrade(80));
 
+        System.out.println("Subject: " + math.getSubjectName());
+        System.out.println("-----------------");
         for(Map.Entry<String, String> entry : subject_math.entrySet()) {
-            System.out.println("Subject: " + math.getSubjectName() + "\nStudent: " + entry.getKey() + "\nGrade: " + entry.getValue());
-            System.out.println("###############");
+            System.out.println("Student: " + entry.getKey() + "\t\tGrade: " + entry.getValue());
         }
 
         HashMap<String, Integer> subject_english = new HashMap<>();
