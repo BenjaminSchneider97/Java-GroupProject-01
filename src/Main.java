@@ -5,7 +5,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         // Subject objects
         Subjects math = new Subjects("Math");
         Subjects german = new Subjects("German");
@@ -46,17 +45,19 @@ public class Main {
         subject_math.put(mark.getStudentFirstName(), 60);
         subject_math.put(judith.getStudentFirstName(), 30);
 
-
-
-
         // Hash map for student final grade
 
         HashMap<String, String> grade_math = new HashMap<>();
 
-        grade_math.put(mark.getStudentFirstName(), mark.c)
+        grade_math.put(mark.getStudentFirstName(), mark.calcGrade(subject_math.get(mark.getStudentFirstName())));
+
+        System.out.println(grade_math);
 
 
+        //mark.calcGrade(subject_math.get(0));
 
+
+        HashMap<String, Integer> subject_english = new HashMap<>();
 
     }
 }

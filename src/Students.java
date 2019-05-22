@@ -52,4 +52,25 @@ public class Students {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    public String calcGrade(int points){
+
+        String grade = "";
+
+        if (points > 90) {
+            grade = "A";
+        } else if (points > 80) {
+            grade = "B";
+        } else if (points > 70) {
+            grade = "C";
+        } else if (points > 60) {
+            grade = "D";
+        } else if (points >= 50) {
+            grade = "E";
+        } else if (points < 50) {
+            grade = "F";
+        }
+
+        return  grade;
+    }
 }
