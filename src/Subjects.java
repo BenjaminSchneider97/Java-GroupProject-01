@@ -1,8 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Subjects   {
 
     private String subjectName;
 
     public Subjects(String subjectName){
+
         this.subjectName = subjectName;
     }
 
