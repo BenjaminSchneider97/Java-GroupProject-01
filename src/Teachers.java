@@ -28,4 +28,22 @@ public class Teachers {
     public void setTeacherLastName(String teacherLastName){
         this.teacherLastName = teacherLastName;
     }
+<<<<<<< HEAD
+=======
+
+    public ArrayList<Subjects> getSubjects() {
+        return this.subjects;
+    }
+
+    public void setSubjects(ArrayList<Subjects> subjects) {
+        this.subjects = subjects;
+    }
+
+    public void printSubjects(Teachers teacher){
+        System.out.println("Teacher: " + teacher.getTeacherFirstName() + " " + teacher.getTeacherLastName().toUpperCase());
+        for (int i = 0; i < teacher.getSubjects().size(); i++){
+            System.out.println(teacher.getSubjects().get(i).getSubjectName());
+        }
+    }
+>>>>>>> 107a50146b52613002860f90278050a643bb595d
 }

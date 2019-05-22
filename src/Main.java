@@ -60,26 +60,24 @@ public class Main {
         teacher_bold_subjects.add(german);
 
         ArrayList<Subjects> teacher_eichenberg_subjects = new ArrayList<>();
-        teacher_bold_subjects.add(biology);
-        teacher_bold_subjects.add(english);
+        teacher_eichenberg_subjects.add(biology);
+        teacher_eichenberg_subjects.add(english);
 
         ArrayList<Subjects> teacher_bush_subjects = new ArrayList<>();
-        teacher_bold_subjects.add(physics);
-        teacher_bold_subjects.add(it);
+        teacher_bush_subjects.add(physics);
+        teacher_bush_subjects.add(it);
 
         ArrayList<Subjects> teacher_trump_subjects = new ArrayList<>();
-        teacher_bold_subjects.add(math);
-        teacher_bold_subjects.add(it);
+        teacher_trump_subjects.add(math);
+        teacher_trump_subjects.add(it);
 
         ArrayList<Subjects> teacher_williams_subjects = new ArrayList<>();
-        teacher_bold_subjects.add(math);
-        teacher_bold_subjects.add(german);
+        teacher_williams_subjects.add(math);
+        teacher_williams_subjects.add(german);
 
         ArrayList<Subjects> teacher_warmhud_subjects = new ArrayList<>();
-        teacher_bold_subjects.add(english);
-        teacher_bold_subjects.add(biology);
-
-
+        teacher_warmhud_subjects.add(english);
+        teacher_warmhud_subjects.add(biology);
 
         // Teacher objects
         Teachers bold = new Teachers("Garry", "Bold", teacher_bold_subjects );
@@ -104,6 +102,6 @@ public class Main {
 
         HashMap<String, Integer> subject_english = new HashMap<>();
 
-
+        trump.printSubjects(bush);
     }
 }
