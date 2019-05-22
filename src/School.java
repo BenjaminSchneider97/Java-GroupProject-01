@@ -1,4 +1,7 @@
 public class School {
 
-    public School()
+    String name;
+
+
+    public Schoo()
 }
