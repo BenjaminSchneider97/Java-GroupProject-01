@@ -12,6 +12,7 @@ public class Main {
         Subjects english = new Subjects("English");
         Subjects physics = new Subjects("Physics");
         Subjects it = new Subjects("Information Technology");
+        Subjects biology = new Subjects("Biology");
 
         // Array for subjects 1A
         ArrayList<Subjects> subjects_1a = new ArrayList<>();
@@ -28,11 +29,39 @@ public class Main {
         subjects_3a.add(physics);
         subjects_3a.add(it);
 
+        //Schedules
+        Subjects[][] schedule1 = {
+                {math, math, math, math, math, biology},
+                {english, biology, english, english, english},
+                {german, german, biology, german, german},
+                {physics, physics, physics, biology, physics},
+                {biology, it, it, it, it}
+        };
+
+        Subjects[][] schedule2 = {
+                {biology, math, it, german, english},
+                {math, biology, it, english, german},
+                {it, german, english, math, biology},
+                {english, math, german, it, biology},
+                {english, german, it, math, biology},
+        };
+
+        Subjects[][] schedule3 = {
+                {math, biology, english, it, german},
+                {math, biology, english, it, german},
+                {math, biology, english, it, german},
+                {math, biology, english, it, german},
+                {math, biology, english, it, german},
+        };
+
+        Schedules scheduleA1 = new Schedules(schedule1);
+        Schedules scheduleA2 = new Schedules(schedule2);
+        Schedules scheduleA3 = new Schedules(schedule3);
 
         // Class objects
-        Class a1 = new Class("1A", subjects_1a);
-        Class a2 = new Class("2A",subjects_2a);
-        Class a3 = new Class("3A", subjects_3a);
+        Class a1 = new Class("1A", subjects_1a, scheduleA1);
+        Class a2 = new Class("2A", subjects_2a, scheduleA2);
+        Class a3 = new Class("3A", subjects_3a, scheduleA3);
 
         // Student objects
         Students mark = new Students("Mark", "Forster", "Marry", a1);

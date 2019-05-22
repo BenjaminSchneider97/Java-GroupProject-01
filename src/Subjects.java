@@ -1,11 +1,9 @@
 public class Subjects   {
 
     private String subjectName;
-    private Schedules schedules;
 
-    public Subjects(String subjectName, Schedules schedules){
+    public Subjects(String subjectName){
         this.subjectName = subjectName;
-        this.schedules = schedules;
     }
 
     public String getSubjectName(){
