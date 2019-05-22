@@ -46,7 +46,14 @@ public class Main {
         subject_math.put(mark.getStudentFirstName(), 60);
         subject_math.put(judith.getStudentFirstName(), 30);
 
-        HashMap<String, Integer> subject_english = new HashMap<>();
+
+
+
+        // Hash map for student final grade
+
+        HashMap<String, String> grade_math = new HashMap<>();
+
+        grade_math.put(mark.getStudentFirstName(), mark.c)
 
 
 
