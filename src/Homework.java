@@ -1,29 +1,21 @@
+import java.util.ArrayList;
+
 public class Homework {
 
-    private Class classes;
-    private Subjects subject;
+    private ArrayList<Subjects> subjects;
 
-    public Homework() {
+    public Homework(ArrayList<Subjects> subjects) {
 
-        this.classes = classes;
-        this.subject = subject;
+        this.subjects = subjects;
     }
 
     // Getter
-    public Class getClasses() {
-        return classes;
-    }
-
-    public Subjects getSubject() {
-        return subject;
+    public ArrayList<Subjects> getSubjects() {
+        return subjects;
     }
 
     // Setter
-    public void setClasses(Class classes) {
-        this.classes = classes;
-    }
-
-    public void setSubject(Subjects subject) {
-        this.subject = subject;
+    public void setSubjects(ArrayList<Subjects> subjects) {
+        this.subjects = subjects;
     }
 }
