@@ -55,6 +55,40 @@ public class Main {
         Students simon = new Students("Simon", "Blaha", "Fritz", a3);
         Students judith = new Students("Judith", "Lang", "McLove", a1);
 
+        ArrayList<Subjects> teacher_bold_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(math);
+        teacher_bold_subjects.add(german);
+
+        ArrayList<Subjects> teacher_eichenberg_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(biology);
+        teacher_bold_subjects.add(english);
+
+        ArrayList<Subjects> teacher_bush_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(physics);
+        teacher_bold_subjects.add(it);
+
+        ArrayList<Subjects> teacher_trump_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(math);
+        teacher_bold_subjects.add(it);
+
+        ArrayList<Subjects> teacher_williams_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(math);
+        teacher_bold_subjects.add(german);
+
+        ArrayList<Subjects> teacher_warmhud_subjects = new ArrayList<>();
+        teacher_bold_subjects.add(english);
+        teacher_bold_subjects.add(biology);
+
+
+
+        // Teacher objects
+        Teachers bold = new Teachers("Garry", "Bold", teacher_bold_subjects );
+        Teachers eichenberg = new Teachers("Till", "Eichenberg", teacher_eichenberg_subjects);
+        Teachers bush = new Teachers("Mike", "Bush", teacher_bush_subjects);
+        Teachers trump = new Teachers("Doofy", "Trump", teacher_trump_subjects);
+        Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
+        Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
+
         // Hash map for grades
         HashMap<String, String> subject_math = new HashMap<>();
 
