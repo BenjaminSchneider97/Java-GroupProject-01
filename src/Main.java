@@ -14,21 +14,6 @@ public class Main {
         Subjects it = new Subjects("Information Technology");
         Subjects biology = new Subjects("Biology");
 
-        // Array for subjects 1A
-        ArrayList<Subjects> subjects_1a = new ArrayList<>();
-        subjects_1a.add(math);
-        subjects_1a.add(german);
-
-        // Array for subjects 2A
-        ArrayList<Subjects> subjects_2a = new ArrayList<>();
-        subjects_2a.add(english);
-        subjects_2a.add(math);
-
-        //Array for subjects 3A
-        ArrayList<Subjects> subjects_3a = new ArrayList<>();
-        subjects_3a.add(physics);
-        subjects_3a.add(it);
-
         //Schedules
         Subjects[][] schedule1 = {
                 {math, math, math, math, math, biology},
@@ -59,9 +44,9 @@ public class Main {
         Schedules scheduleA3 = new Schedules(schedule3);
 
         // Class objects
-        Class a1 = new Class("1A", subjects_1a, scheduleA1);
-        Class a2 = new Class("2A", subjects_2a, scheduleA2);
-        Class a3 = new Class("3A", subjects_3a, scheduleA3);
+        Class a1 = new Class("1A", scheduleA1);
+        Class a2 = new Class("2A", scheduleA2);
+        Class a3 = new Class("3A", scheduleA3);
 
         // Student objects
         Students mark = new Students("Mark", "Forster", "Marry", a1);
