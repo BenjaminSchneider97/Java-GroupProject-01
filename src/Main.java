@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -20,6 +21,7 @@ public class Main {
         // Array for subjects 2A
         ArrayList<Subjects> subjects_2a = new ArrayList<>();
         subjects_2a.add(english);
+        subjects_2a.add(math);
 
         //Array for subjects 3A
         ArrayList<Subjects> subjects_3a = new ArrayList<>();
@@ -39,25 +41,20 @@ public class Main {
         Students simon = new Students("Simon", "Blaha", "Fritz", a3);
         Students judith = new Students("Judith", "Lang", "McLove", a1);
 
-        // Hash maps for subjects and points
-        HashMap<String, Integer> subject_math = new HashMap<>();
+        // Hash map for grades
+        HashMap<String, String> subject_math = new HashMap<>();
 
-        subject_math.put(mark.getStudentFirstName(), 60);
-        subject_math.put(judith.getStudentFirstName(), 30);
+        subject_math.put(mark.getStudentFirstName(), mark.calcGrade(60));
+        subject_math.put(judith.getStudentFirstName(), judith.calcGrade(30));
+        subject_math.put(jenny.getStudentFirstName(), jenny.calcGrade(80));
 
-        // Hash map for student final grade
-
-        HashMap<String, String> grade_math = new HashMap<>();
-
-        grade_math.put(mark.getStudentFirstName(), mark.calcGrade(subject_math.get(mark.getStudentFirstName())));
-
-        System.out.println(grade_math);
-
-
-        //mark.calcGrade(subject_math.get(0));
-
+        for(Map.Entry<String, String> entry : subject_math.entrySet()) {
+            System.out.println("Subject: " + math.getSubjectName() + "\nStudent: " + entry.getKey() + "\nGrade: " + entry.getValue());
+            System.out.println("###############");
+        }
 
         HashMap<String, Integer> subject_english = new HashMap<>();
+
 
     }
 }
