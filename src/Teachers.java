@@ -5,6 +5,7 @@ public class Teachers {
     private String teacherFirstName;
     private String teacherLastName;
     private ArrayList<Subjects> subjects;
+    private Subjects subject;
 
     public Teachers(String teacherFirstName, String teacherLastName, ArrayList<Subjects> subjects){
         this.teacherFirstName = teacherFirstName;
@@ -27,5 +28,4 @@ public class Teachers {
     public void setTeacherLastName(String teacherLastName){
         this.teacherLastName = teacherLastName;
     }
-
 }
