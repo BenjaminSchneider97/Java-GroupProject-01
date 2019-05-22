@@ -5,7 +5,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Subjects math = new Subjects("Math");
         Subjects german = new Subjects("German");
 
@@ -14,14 +13,11 @@ public class Main {
         subjects_1a.add(german);
 
         Class a1 = new Class("1A", subjects_1a);
-        Students mark = new Students("Mark", "Forster", "Marry", new Clas);
-
-
+        Students mark = new Students("Mark", "Forster", "Marry", a1);
 
         HashMap<String, Integer> subject_math = new HashMap<>();
 
         subject_math.put(mark.getStudentFirstName(), 30);
-
 
     }
 }
