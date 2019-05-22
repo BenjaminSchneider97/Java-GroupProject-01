@@ -2,22 +2,28 @@ import java.util.ArrayList;
 
 public class Homework {
 
-    private ArrayList<Subjects> subjects;
-    private ArrayList<Schedules> schedule;
+    private Subjects subject;
+    private Schedules schedule;
 
-    public Homework(ArrayList<Subjects> subjects, ArrayList<Schedules> schedule) {
+    public Homework(Subjects subject, Schedules schedule) {
 
-        this.subjects = subjects;
+        this.subject = subject;
         this.schedule = schedule;
     }
 
-    // Getter
-    public ArrayList<Subjects> getSubjects() {
-        return subjects;
+    public Subjects getSubject() {
+        return subject;
     }
 
-    // Setter
-    public void setSubjects(ArrayList<Subjects> subjects) {
-        this.subjects = subjects;
+    public void setSubject(Subjects subject) {
+        this.subject = subject;
+    }
+
+    public Schedules getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(Schedules schedule) {
+        this.schedule = schedule;
     }
 }

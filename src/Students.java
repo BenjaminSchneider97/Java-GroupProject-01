@@ -4,6 +4,7 @@ public class Students {
     private String lastName;
     private String parentName;
     private Class className;
+    private int points;
 
     public Students(String firstName, String lastName, String parentName, Class className){
         this.firstName = firstName;
@@ -34,5 +35,13 @@ public class Students {
 
     public void setParentName(String parentName) {
         this.parentName = parentName;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 }
