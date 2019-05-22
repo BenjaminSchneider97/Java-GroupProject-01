@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         // Subject objects
         Subjects math = new Subjects("Math");
         Subjects german = new Subjects("German");
@@ -46,7 +47,6 @@ public class Main {
         subject_math.put(judith.getStudentFirstName(), 30);
 
         HashMap<String, Integer> subject_english = new HashMap<>();
-
 
 
 
