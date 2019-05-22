@@ -1,10 +1,13 @@
+import java.util.ArrayList;
+
 public class Class {
 
     private String className;
+    private ArrayList<Subjects> subjects;
 
-    public Class(String className) {
-
+    public Class(String className, ArrayList<Subjects> subjects) {
         this.className = className;
+        this.subjects = subjects;
     }
 
     // Getter
