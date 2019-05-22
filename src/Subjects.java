@@ -13,5 +13,10 @@ public class Subjects   {
     public void setSubjectName(String subjectName){
         this.subjectName = subjectName;
     }
+
+    public void printSchedulePlan(Subjects[][] schedule) {
+        System.out.println("Monday\tTuesday");
+        System.out.println(schedule[0][0] + "\t" + schedule[1][0]);
+    }
 }
 

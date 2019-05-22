@@ -103,5 +103,7 @@ public class Main {
         HashMap<String, Integer> subject_english = new HashMap<>();
 
         trump.printSubjects(bush);
+
+        trump.
     }
 }

@@ -6,4 +6,6 @@ public class Schedules {
     public Schedules(Subjects[][] subjects) {
         this.subjects = subjects;
     }
+
+
 }

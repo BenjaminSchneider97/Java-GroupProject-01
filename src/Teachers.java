@@ -5,7 +5,6 @@ public class Teachers {
     private String teacherFirstName;
     private String teacherLastName;
     private ArrayList<Subjects> subjects;
-    private Subjects subject;
 
     public Teachers(String teacherFirstName, String teacherLastName, ArrayList<Subjects> subjects){
         this.teacherFirstName = teacherFirstName;
@@ -28,8 +27,6 @@ public class Teachers {
     public void setTeacherLastName(String teacherLastName){
         this.teacherLastName = teacherLastName;
     }
-<<<<<<< HEAD
-=======
 
     public ArrayList<Subjects> getSubjects() {
         return this.subjects;
@@ -45,5 +42,4 @@ public class Teachers {
             System.out.println(teacher.getSubjects().get(i).getSubjectName());
         }
     }
->>>>>>> 107a50146b52613002860f90278050a643bb595d
 }
