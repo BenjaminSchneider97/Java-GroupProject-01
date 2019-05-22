@@ -11,12 +11,12 @@ public class Main {
         Subjects german = new Subjects("German");
         Subjects english = new Subjects("English");
         Subjects physics = new Subjects("Physics");
-        Subjects it = new Subjects("Information Technology");
+        Subjects it = new Subjects("IT");
         Subjects biology = new Subjects("Biology");
 
         //Schedules
         Subjects[][] schedule1 = {
-                {math, math, math, math, math, biology},
+                {math, math, math, math, math},
                 {english, biology, english, english, english},
                 {german, german, biology, german, german},
                 {physics, physics, physics, biology, physics},
@@ -104,6 +104,6 @@ public class Main {
 
         trump.printSubjects(bush);
 
-        trump.
+        scheduleA1.printSchedulePlan(schedule1);
     }
 }
