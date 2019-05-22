@@ -1,40 +1,48 @@
 public class Students {
 
-    private String firstName;
-    private String lastName;
+    private String studentFirstName;
+    private String studentLastName;
     private String parentName;
     private Class className;
     private int points;
 
-    public Students(String firstName, String lastName, String parentName, Class className){
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Students(String studentFirstName, String studentLastName, String parentName, Class className) {
+        this.studentFirstName = studentFirstName;
+        this.studentLastName = studentLastName;
         this.parentName = parentName;
         this.className = className;
     }
 
-    public String getFirstName() {
-        return this.firstName;
+    public String getStudentFirstName() {
+        return studentFirstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setStudentFirstName(String studentFirstName) {
+        this.studentFirstName = studentFirstName;
     }
 
-    public String getLastName() {
-        return this.lastName;
+    public String getStudentLastName() {
+        return studentLastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setStudentLastName(String studentLastName) {
+        this.studentLastName = studentLastName;
     }
 
     public String getParentName() {
-        return this.parentName;
+        return parentName;
     }
 
     public void setParentName(String parentName) {
         this.parentName = parentName;
+    }
+
+    public Class getClassName() {
+        return className;
+    }
+
+    public void setClassName(Class className) {
+        this.className = className;
     }
 
     public int getPoints() {
