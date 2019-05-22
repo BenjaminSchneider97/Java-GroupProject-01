@@ -2,30 +2,30 @@ import java.util.ArrayList;
 
 public class Teachers {
 
-    private String tfname;
-    private String tlname;
+    private String teacherFirstName;
+    private String teacherLastName;
     private ArrayList<Subjects> subjects;
 
-    public Teachers(String tfname, String tlname, ArrayList<Subjects> subjects){
-        this.tfname = tfname;
-        this.tlname = tlname;
+    public Teachers(String teacherFirstName, String teacherLastName, ArrayList<Subjects> subjects){
+        this.teacherFirstName = teacherFirstName;
+        this.teacherLastName = teacherLastName;
         this.subjects = subjects;
     }
 
-    public String getTfname(){
-        return this.tfname;
+    public String getTeacherFirstName(){
+        return this.teacherFirstName;
     }
 
-    public void setTfname(String tfname){
-        this.tfname = tfname;
+    public void setTeacherFirstName(String teacherFirstName){
+        this.teacherFirstName = teacherFirstName;
     }
 
-    public String getTlname(){
-        return this.tlname;
+    public String getTeacherLastName(){
+        return this.teacherLastName;
     }
 
-    public void setTlname(String tlname){
-        this.tlname = tlname;
+    public void setTeacherLastName(String teacherLastName){
+        this.teacherLastName = teacherLastName;
     }
 
 }

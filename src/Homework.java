@@ -1,14 +1,21 @@
-import java.util.ArrayList;
-
 public class Homework {
 
+    private String homeworkDescription;
     private Subjects subject;
     private Schedules schedule;
 
-    public Homework(Subjects subject, Schedules schedule) {
-
+    public Homework(String homeworkDescription, Subjects subject, Schedules schedule) {
+        this.homeworkDescription = homeworkDescription;
         this.subject = subject;
         this.schedule = schedule;
+    }
+
+    public String getHomeworkDescription() {
+        return homeworkDescription;
+    }
+
+    public void setHomeworkDescription(String homeworkDescription) {
+        this.homeworkDescription = homeworkDescription;
     }
 
     public Subjects getSubject() {

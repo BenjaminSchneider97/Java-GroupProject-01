@@ -6,7 +6,6 @@ public class Schedules {
     private GregorianCalendar end;
 
     public Schedules(GregorianCalendar start, GregorianCalendar end) {
-
         this.start = start;
         this.end = end;
     }
