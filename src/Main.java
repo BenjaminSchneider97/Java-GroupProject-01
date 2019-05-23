@@ -11,32 +11,32 @@ public class Main {
         Subjects german = new Subjects("German");
         Subjects english = new Subjects("English");
         Subjects physics = new Subjects("Physics");
-        Subjects it = new Subjects("IT");
+        Subjects it = new Subjects("Info");
         Subjects biology = new Subjects("Biology");
 
         //Schedules
         Subjects[][] schedule1 = {
-                {math, math, math, math, math},
-                {english, biology, english, english, english},
-                {german, german, biology, german, german},
-                {physics, physics, physics, biology, physics},
-                {biology, it, it, it, it}
+                {math, math, math, math, math, biology},
+                {english, biology, english, math, english, english},
+                {german, german, english, biology, german, german},
+                {physics, physics, it, physics, biology, physics},
+                {biology, it, it, it, it, physics}
         };
 
         Subjects[][] schedule2 = {
-                {biology, math, it, german, english},
-                {math, biology, it, english, german},
-                {it, german, english, math, biology},
-                {english, math, german, it, biology},
-                {english, german, it, math, biology},
+                {biology, math, it, german, english, physics},
+                {math, biology, it, physics, english, german},
+                {it, german, physics, english, math, biology},
+                {english, math, german, it, biology, physics},
+                {physics, english, german, it, math, biology},
         };
 
         Subjects[][] schedule3 = {
-                {math, biology, english, it, german},
-                {math, biology, english, it, german},
-                {math, biology, english, it, german},
-                {math, biology, english, it, german},
-                {math, biology, english, it, german},
+                {math, biology, english, it, german, physics},
+                {math, biology, english, it, german, physics},
+                {math, biology, english, it, german, physics},
+                {math, biology, english, it, german, physics},
+                {math, biology, english, it, german, physics},
         };
 
         Schedules scheduleA1 = new Schedules(schedule1);
