@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Students {
 
     private String studentFirstName;
@@ -72,5 +75,31 @@ public class Students {
         }
 
         return  grade;
+    }
+
+    public String inputPoints(Students student, ArrayList<Subjects> allSubjects){
+        String result = "";
+        Scanner input = new Scanner(System.in);
+        int totalpoints = 0;
+
+        for(Subjects subject : allSubjects){
+            System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName + " " + student.getStudentLastName().substring(0, 1) + ".:");
+            int a = input.nextInt();
+            totalpoints += a;
+            result += student.getStudentFirstName() + " " + student.getStudentLastName().toUpperCase() + "'s" + " final grade in \"" + subject.getSubjectName() + "\": " + calcGrade(a) + "\n";
+        }
+        int average = totalpoints/allSubjects.size();
+        String averageGrade = calcGrade(average);
+        String averageString = "Total Points = " + totalpoints + ", the average points are: " + average + " which is a(n) " + averageGrade ;
+
+        return "SEMESTER REPORT FOR " + student.getStudentFirstName().toUpperCase() + " " + student.getStudentLastName().toUpperCase() + "\n"
+                + "==========================================\n"
+                + result + "\n" + averageString;
+    }
+
+    public String calcAverage(){
+        String result = "";
+
+        return  result;
     }
 }

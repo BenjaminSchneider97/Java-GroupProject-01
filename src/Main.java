@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
 
@@ -13,6 +14,14 @@ public class Main {
         Subjects physics = new Subjects("Physics");
         Subjects it = new Subjects("Info");
         Subjects biology = new Subjects("Biology");
+
+        ArrayList<Subjects> allSubjects = new ArrayList<>();
+        allSubjects.add(math);
+        allSubjects.add(german);
+        allSubjects.add(english);
+        allSubjects.add(physics);
+        allSubjects.add(it);
+        allSubjects.add(biology);
 
         //Schedules
         Subjects[][] schedule1 = {
@@ -87,23 +96,10 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
 
-        // Hash map for grades
-        HashMap<String, String> subject_math = new HashMap<>();
+        System.out.println(mark.inputPoints(jenny, allSubjects));
 
-        subject_math.put(mark.getStudentFirstName(), mark.calcGrade(60));
-        subject_math.put(judith.getStudentFirstName(), judith.calcGrade(30));
-        subject_math.put(jenny.getStudentFirstName(), jenny.calcGrade(80));
+        //trump.printSubjects(bush);
 
-        System.out.println("Subject: " + math.getSubjectName());
-        System.out.println("-----------------");
-        for(Map.Entry<String, String> entry : subject_math.entrySet()) {
-            System.out.println("Student: " + entry.getKey() + "\t\tGrade: " + entry.getValue());
-        }
-
-        HashMap<String, Integer> subject_english = new HashMap<>();
-
-        trump.printSubjects(bush);
-
-        scheduleA1.printSchedulePlan(schedule1);
+        //scheduleA1.printSchedulePlan(schedule1);
     }
 }
