@@ -122,8 +122,6 @@ public class Main {
         Teachers trump = new Teachers("Doofy", "Trump", teacher_trump_subjects);
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
-        
-        // System.out.println(mark.inputPoints(mark, allSubjects));
 
         // System.out.println(mark.inputPoints(mark, allSubjects, school1));
 
@@ -132,15 +130,13 @@ public class Main {
         // scheduleA1.printSchedulePlan(schedule1);
 
         // Print homework schedule for a specific class and subject
-        hw_1a.printHomeworkSchedule(a1, biology);
-        hw_2a.printHomeworkSchedule(a2, biology);
+        // hw_1a.printHomeworkSchedule(a1, biology);
+        // hw_2a.printHomeworkSchedule(a2, biology);
 
         // Print abstinence for a specific student
-        student2.printAbstinence(benjamin);
+        // student2.printAbstinence(benjamin);
 
         // Print abstinence for all students
-        student1.printTotalAbstinence(students);
-
-
+        // student1.printTotalAbstinence(students);
     }
 }

@@ -6,14 +6,14 @@ public class Students {
     private String studentFirstName;
     private String studentLastName;
     private String parentName;
-    private Class className;
+    private Class className1;
     private int points;
 
     public Students(String studentFirstName, String studentLastName, String parentName, Class className) {
         this.studentFirstName = studentFirstName;
         this.studentLastName = studentLastName;
         this.parentName = parentName;
-        this.className = className;
+        this.className1 = className;
     }
 
     public String getStudentFirstName() {
@@ -40,12 +40,12 @@ public class Students {
         this.parentName = parentName;
     }
 
-    public Class getClassName() {
-        return className;
+    public Class getClassName1() {
+        return className1;
     }
 
-    public void setClassName(Class className) {
-        this.className = className;
+    public void setClassName1(Class className) {
+        this.className1 = className;
     }
 
     public int getPoints() {
