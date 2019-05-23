@@ -73,6 +73,23 @@ public class Main {
         Students simon = new Students("Simon", "Blaha", "Fritz Panda", a3);
         Students judith = new Students("Judith", "Lang", "McLove Baum", a1);
 
+        // Track abstinence
+        Abstinence student1 = new Abstinence(mark, "Monday, 22.05.2019");
+        Abstinence student2 = new Abstinence(judith, "Friday, 02.05.2019");
+        Abstinence student3 = new Abstinence(benjamin, "Monday, 07.02.2019");
+        Abstinence student4 = new Abstinence(jenny, "Monday, 02.11.2018");
+        Abstinence student5 = new Abstinence(simon, "Tuesday, 13.03.2019");
+
+        // Save abstinence objects into an array list
+
+        ArrayList<Abstinence> students = new ArrayList<>();
+
+        students.add(student1);
+        students.add(student2);
+        students.add(student3);
+        students.add(student4);
+        students.add(student5);
+
         // Assign subjects to teachers
         ArrayList<Subjects> teacher_bold_subjects = new ArrayList<>();
         teacher_bold_subjects.add(math);
@@ -106,15 +123,24 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
         
-        //System.out.println(mark.inputPoints(mark, allSubjects));
+        // System.out.println(mark.inputPoints(mark, allSubjects));
 
-        System.out.println(mark.inputPoints(mark, allSubjects, school1));
+        // System.out.println(mark.inputPoints(mark, allSubjects, school1));
 
-        //trump.printSubjects(bush);
+        // trump.printSubjects(bush);
 
-        //scheduleA1.printSchedulePlan(schedule1);
+        // scheduleA1.printSchedulePlan(schedule1);
 
+        // Print homework schedule for a specific class and subject
         hw_1a.printHomeworkSchedule(a1, biology);
         hw_2a.printHomeworkSchedule(a2, biology);
+
+        // Print abstinence for a specific student
+        student2.printAbstinence(benjamin);
+
+        // Print abstinence for all students
+        student1.printTotalAbstinence(students);
+
+
     }
 }
