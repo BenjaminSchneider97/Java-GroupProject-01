@@ -84,16 +84,16 @@ public class Students {
         int totalpoints = 0;
 
         for(Subjects subject : allSubjects){
-            System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName + " " + student.getStudentLastName().substring(0, 1) + ".:");
+            System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName +" " + " " + student.getStudentLastName().substring(0, 1) + ".:");
             int a = input.nextInt();
             if (a < 50){
                 notice =
-                        "\n"+
-                        "Dear Parents,\n" +
-                        "It is your fault, you lazy, miserable people, JOHN DOE and JANE DOE:  why didn’t you spend your afternoons and weekends teaching your kid TOMMY DOE following subjects:\n"+
-                        "MATH, BIOLOGY and ENGLISH, where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time?" +
-                                "Shame. Shame. Shame: oh, yeah, btw, here is a contact list of institutions and people that can provide you with extra help - maybe some of our fellow teachers works there, maybe not):\n" +
-                        "For MATH:\n" +
+
+                        "\nDear " + student.parentName+ ", \n"+
+                        "It is your fault, you lazy, miserable people, " + student.getParentName()+ " why didn’t you spend your afternoons and weekends teaching your kid " + student.getStudentFirstName() +"" + student.getStudentLastName() +  " following subjects:\n"+
+                        "MATH, BIOLOGY and ENGLISH, where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time? \n" +
+                        "Shame. Shame. Shame: oh, yeah, btw, here is a contact list of institutions and people that can provide you with extra help - maybe some of our fellow teachers works there, maybe not):\n" +
+                        "\nFor MATH:\n" +
                         "…..\n" +
                         "…..\n" +
                         "…..\n" +
@@ -104,9 +104,9 @@ public class Students {
                         "…..\n" +
                         "…..\n" +
                         "In the name of your beloved First Elite School “We Are Proud That We Treat All Students Equal”,\n"+
-                        "Sincerely Yours,   \n" +
-                        "Dr Dipl.Kfm. Max von und zu Mustermann,\n" +
-                        "Director of School \n";
+                        "\nSincerely Yours," +
+                        "\n\nDr Dipl.Kfm. Max von und zu Mustermann,\n" +
+                        "Director of School \n\n";
             }
             totalpoints += a;
             result += student.getStudentFirstName() + " " + student.getStudentLastName().toUpperCase() + "'s" + " final grade in \"" + subject.getSubjectName() + "\": " + calcGrade(a) + "\n";
