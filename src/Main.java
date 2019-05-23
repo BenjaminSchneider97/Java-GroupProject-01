@@ -68,11 +68,11 @@ public class Main {
 
 
         // Student objects
-        Students mark = new Students("Mark", "Forster", "Marry", a1);
-        Students jenny = new Students("Jenny", "Tang", "Li-Hung", a2);
-        Students benjamin = new Students("Benjamin", "Schneider", "Josef", a3);
-        Students simon = new Students("Simon", "Blaha", "Fritz", a3);
-        Students judith = new Students("Judith", "Lang", "McLove", a1);
+        Students mark = new Students("Mark", "Forster", "Marry Poppins", a1);
+        Students jenny = new Students("Jenny", "Tang", "Li-Hung Chang", a2);
+        Students benjamin = new Students("Benjamin", "Schneider", "Josef Hund", a3);
+        Students simon = new Students("Simon", "Blaha", "Fritz Panda", a3);
+        Students judith = new Students("Judith", "Lang", "McLove Baum", a1);
 
         // Assign subjects to teachers
         ArrayList<Subjects> teacher_bold_subjects = new ArrayList<>();
