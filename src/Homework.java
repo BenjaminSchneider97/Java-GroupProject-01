@@ -36,13 +36,13 @@ public class Homework {
         this.schedule = schedule;
     }
 
-    public void printHomeworkSchedule(Class class11, Subjects subject) {
-        if(class11 == class1){
+    public void printHomeworkSchedule(Class class11, Subjects subject1) {
+        if(class11 == class1 && subject1 == subject){
             System.out.println("Class: " + class11.getClassName() + "\n" +
-                    "The homework for " + subject.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + "\n" +
+                    "The homework for " + subject1.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + "\n" +
                     homeworkDescription);
         } else {
-            System.out.println("The class " + class11.getClassName() + " has no homework in the subject " + subject.getSubjectName() + "!");
+            System.out.println("The class " + class11.getClassName() + " has no homework in the subject " + subject1.getSubjectName() + "!");
         }
     }
 }

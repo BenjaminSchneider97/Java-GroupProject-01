@@ -52,6 +52,7 @@ public class Main {
 
         // Homework objects
         Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, hschedule1, a1);
+        Homework hw_2a = new Homework("Sort the frogs by type", biology, hschedule1, a2);
 
         ArrayList<Subjects> allSubjects = new ArrayList<>();
         allSubjects.add(math);
@@ -107,6 +108,7 @@ public class Main {
 
         //scheduleA1.printSchedulePlan(schedule1);
 
-        hw_1a.printHomeworkSchedule(a1, math);
+        hw_1a.printHomeworkSchedule(a1, biology);
+        hw_2a.printHomeworkSchedule(a2, biology);
     }
 }
