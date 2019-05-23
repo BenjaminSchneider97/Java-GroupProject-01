@@ -80,6 +80,7 @@ public class Students {
     public String inputPoints(Students student, ArrayList<Subjects> allSubjects){
         String result = "";
         String notice = "";
+        String negativeSubjects = "";
         Scanner input = new Scanner(System.in);
         int totalpoints = 0;
 
@@ -87,22 +88,12 @@ public class Students {
             System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName +" " + " " + student.getStudentLastName().substring(0, 1) + ".:");
             int a = input.nextInt();
             if (a < 50){
+                negativeSubjects += subject.getSubjectName() + ", ";
                 notice =
-
                         "\nDear " + student.parentName+ ", \n"+
-                        "It is your fault, you lazy, miserable people, " + student.getParentName()+ " why didn’t you spend your afternoons and weekends teaching your kid " + student.getStudentFirstName() +"" + student.getStudentLastName() +  " following subjects:\n"+
-                        "MATH, BIOLOGY and ENGLISH, where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time? \n" +
+                        "It is your fault, you lazy, miserable people, " + student.getParentName().toUpperCase()+ " why didn’t you spend your afternoons and weekends teaching your kid " + student.getStudentFirstName().toUpperCase() + " " + student.getStudentLastName().toUpperCase() +  " following subjects:\n"+
+                        negativeSubjects + "where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time? \n" +
                         "Shame. Shame. Shame: oh, yeah, btw, here is a contact list of institutions and people that can provide you with extra help - maybe some of our fellow teachers works there, maybe not):\n" +
-                        "\nFor MATH:\n" +
-                        "…..\n" +
-                        "…..\n" +
-                        "…..\n" +
-                        "For BIOLOGY:\n" +
-                        "….\n" +
-                        "…..\n" +
-                        "For ENGLISH:\n" +
-                        "…..\n" +
-                        "…..\n" +
                         "In the name of your beloved First Elite School “We Are Proud That We Treat All Students Equal”,\n"+
                         "\nSincerely Yours," +
                         "\n\nDr Dipl.Kfm. Max von und zu Mustermann,\n" +
