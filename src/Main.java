@@ -48,12 +48,13 @@ public class Main {
         Class a3 = new Class("3A", scheduleA3);
 
         // Homework schedule
-        HomeworkSchedule hschedule1 = new HomeworkSchedule("27.5.2019", "28.5.2019");
+        // HomeworkSchedule hschedule1 = new HomeworkSchedule("27.5.2019", "28.5.2019");
 
         // Homework objects
-        Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, hschedule1, a1);
-        Homework hw_2a = new Homework("Sort the frogs by type", biology, hschedule1, a2);
+        Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, new HomeworkSchedule("26.5.2019", "27.5.2019"), a1);
+        Homework hw_2a = new Homework("Sort the frogs by type", biology, new HomeworkSchedule("27.5.2019", "28.5.2019"), a2);
 
+        // Save all subject objects into a array list
         ArrayList<Subjects> allSubjects = new ArrayList<>();
         allSubjects.add(math);
         allSubjects.add(german);
@@ -70,6 +71,7 @@ public class Main {
         Students simon = new Students("Simon", "Blaha", "Fritz", a3);
         Students judith = new Students("Judith", "Lang", "McLove", a1);
 
+        // Assign subjects to teachers
         ArrayList<Subjects> teacher_bold_subjects = new ArrayList<>();
         teacher_bold_subjects.add(math);
         teacher_bold_subjects.add(german);
@@ -102,7 +104,7 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
 
-        System.out.println(mark.inputPoints(mark, allSubjects));
+        //System.out.println(mark.inputPoints(mark, allSubjects));
 
         //trump.printSubjects(bush);
 
