@@ -2,12 +2,14 @@ public class Homework {
 
     private String homeworkDescription;
     private Subjects subject;
-    private Schedules schedule;
+    private HomeworkSchedule schedule;
+    private Class class1;
 
-    public Homework(String homeworkDescription, Subjects subject, Schedules schedule) {
+    public Homework(String homeworkDescription, Subjects subject, HomeworkSchedule schedule, Class class1) {
         this.homeworkDescription = homeworkDescription;
         this.subject = subject;
         this.schedule = schedule;
+        this.class1 = class1;
     }
 
     public String getHomeworkDescription() {
@@ -26,11 +28,21 @@ public class Homework {
         this.subject = subject;
     }
 
-    public Schedules getSchedule() {
+    public HomeworkSchedule getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(Schedules schedule) {
+    public void setSchedule(HomeworkSchedule schedule) {
         this.schedule = schedule;
+    }
+
+    public void printHomeworkSchedule(Class class11, Subjects subject) {
+        if(class11 == class1){
+            System.out.println("Class: " + class11.getClassName() + "\n" +
+                    "The homework for " + subject.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + "\n" +
+                    homeworkDescription);
+        } else {
+            System.out.println("The class " + class11.getClassName() + " has no homework in the subject " + subject.getSubjectName() + "!");
+        }
     }
 }
