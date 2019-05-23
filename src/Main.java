@@ -106,12 +106,10 @@ public class Main {
         Teachers trump = new Teachers("Doofy", "Trump", teacher_trump_subjects);
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
-
-<<<<<<< HEAD
+        
         //System.out.println(mark.inputPoints(mark, allSubjects));
-=======
+
         System.out.println(mark.inputPoints(mark, allSubjects, school1));
->>>>>>> 218f626b9185d4dcb20ede5148eb789f9d0e2473
 
         //trump.printSubjects(bush);
 
