@@ -116,6 +116,7 @@ public class Main {
         //scheduleA1.printSchedulePlan(schedule1);
 
         hw_1a.printHomeworkSchedule(a1, biology);
+        System.out.println();
         hw_2a.printHomeworkSchedule(a2, biology);
     }
 }

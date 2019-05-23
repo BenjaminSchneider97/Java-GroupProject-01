@@ -97,7 +97,7 @@ public class Students {
                         "In the name of your beloved First Elite School “" + school1.getSchoolName() + "”,\n"+
                         "\nSincerely Yours," +
                         "\nDr Dipl.Kfm. Max von und zu Mustermann,\n" +
-                        "Director of School";
+                        "Director of School\n";
             }
             totalpoints += a;
             result += student.getStudentFirstName() + " " + student.getStudentLastName().toUpperCase() + "'s" + " final grade in \"" + subject.getSubjectName() + "\": " + calcGrade(a) + "\n";
