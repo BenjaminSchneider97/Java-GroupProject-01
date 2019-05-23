@@ -2,9 +2,9 @@ public class Homework {
 
     private String homeworkDescription;
     private Subjects subject;
-    private Schedules schedule;
+    private HomeworkSchedule schedule;
 
-    public Homework(String homeworkDescription, Subjects subject, Schedules schedule) {
+    public Homework(String homeworkDescription, Subjects subject, HomeworkSchedule schedule) {
         this.homeworkDescription = homeworkDescription;
         this.subject = subject;
         this.schedule = schedule;
@@ -26,11 +26,15 @@ public class Homework {
         this.subject = subject;
     }
 
-    public Schedules getSchedule() {
+    public HomeworkSchedule getSchedule() {
         return schedule;
     }
 
-    public void setSchedule(Schedules schedule) {
+    public void setSchedule(HomeworkSchedule schedule) {
         this.schedule = schedule;
+    }
+
+    public void printHomeworkSchedule(Class class1, Subjects subject) {
+        System.out.println("The homework for " + subject.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + homeworkDescription);
     }
 }

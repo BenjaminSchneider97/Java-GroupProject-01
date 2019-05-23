@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.GregorianCalendar;
 
 public class Main {
 
@@ -15,6 +13,12 @@ public class Main {
         Subjects it = new Subjects("Info");
         Subjects biology = new Subjects("Biology");
 
+        // Homework schedule
+        HomeworkSchedule hschedule1 = new HomeworkSchedule("27.5.2019", "28.5.2019");
+
+        // Homework objects
+        Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, hschedule1);
+
         ArrayList<Subjects> allSubjects = new ArrayList<>();
         allSubjects.add(math);
         allSubjects.add(german);
@@ -22,6 +26,7 @@ public class Main {
         allSubjects.add(physics);
         allSubjects.add(it);
         allSubjects.add(biology);
+
 
         //Schedules
         Subjects[][] schedule1 = {
@@ -96,10 +101,12 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
 
-        System.out.println(mark.inputPoints(jenny, allSubjects));
+       // System.out.println(mark.inputPoints(jenny, allSubjects));
 
         //trump.printSubjects(bush);
 
         //scheduleA1.printSchedulePlan(schedule1);
+
+        hw_1a.printHomeworkSchedule(a1, math);
     }
 }
