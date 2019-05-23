@@ -96,7 +96,7 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
 
-        System.out.println(mark.inputPoints(jenny, allSubjects));
+        System.out.println(mark.inputPoints(mark, allSubjects));
 
         //trump.printSubjects(bush);
 

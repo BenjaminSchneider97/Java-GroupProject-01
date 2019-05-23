@@ -79,27 +79,47 @@ public class Students {
 
     public String inputPoints(Students student, ArrayList<Subjects> allSubjects){
         String result = "";
+        String notice = "";
         Scanner input = new Scanner(System.in);
         int totalpoints = 0;
 
         for(Subjects subject : allSubjects){
             System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName + " " + student.getStudentLastName().substring(0, 1) + ".:");
             int a = input.nextInt();
+            if (a < 50){
+                notice =
+                        "\n"+
+                        "Dear Parents,\n" +
+                        "It is your fault, you lazy, miserable people, JOHN DOE and JANE DOE:  why didn’t you spend your afternoons and weekends teaching your kid TOMMY DOE following subjects:\n"+
+                        "MATH, BIOLOGY and ENGLISH, where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time?" +
+                                "Shame. Shame. Shame: oh, yeah, btw, here is a contact list of institutions and people that can provide you with extra help - maybe some of our fellow teachers works there, maybe not):\n" +
+                        "For MATH:\n" +
+                        "…..\n" +
+                        "…..\n" +
+                        "…..\n" +
+                        "For BIOLOGY:\n" +
+                        "….\n" +
+                        "…..\n" +
+                        "For ENGLISH:\n" +
+                        "…..\n" +
+                        "…..\n" +
+                        "In the name of your beloved First Elite School “We Are Proud That We Treat All Students Equal”,\n"+
+                        "Sincerely Yours,   \n" +
+                        "Dr Dipl.Kfm. Max von und zu Mustermann,\n" +
+                        "Director of School \n";
+            }
             totalpoints += a;
             result += student.getStudentFirstName() + " " + student.getStudentLastName().toUpperCase() + "'s" + " final grade in \"" + subject.getSubjectName() + "\": " + calcGrade(a) + "\n";
         }
         int average = totalpoints/allSubjects.size();
         String averageGrade = calcGrade(average);
         String averageString = "Total Points = " + totalpoints + ", the average points are: " + average + " which is a(n) " + averageGrade ;
-
         return "SEMESTER REPORT FOR " + student.getStudentFirstName().toUpperCase() + " " + student.getStudentLastName().toUpperCase() + "\n"
                 + "==========================================\n"
-                + result + "\n" + averageString;
+                + result + "\n" + averageString +
+                "\n" + notice;
     }
+        }
 
-    public String calcAverage(){
-        String result = "";
 
-        return  result;
-    }
-}
+
