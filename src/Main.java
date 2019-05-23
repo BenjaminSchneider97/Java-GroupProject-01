@@ -5,6 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //School
+        School school1 = new School("Best School in the World", "Schoolway 01");
+
         // Subject objects
         Subjects math = new Subjects("Math");
         Subjects german = new Subjects("German");
@@ -102,7 +105,7 @@ public class Main {
         Teachers williams = new Teachers("Angela", "Williams", teacher_williams_subjects);
         Teachers warmhud = new Teachers("Gregor", "Warmhud", teacher_warmhud_subjects);
 
-        System.out.println(mark.inputPoints(mark, allSubjects));
+        System.out.println(mark.inputPoints(mark, allSubjects, school1));
 
         //trump.printSubjects(bush);
 

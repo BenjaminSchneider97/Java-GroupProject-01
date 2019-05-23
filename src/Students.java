@@ -77,7 +77,7 @@ public class Students {
         return  grade;
     }
 
-    public String inputPoints(Students student, ArrayList<Subjects> allSubjects){
+    public String inputPoints(Students student, ArrayList<Subjects> allSubjects, School school1){
         String result = "";
         String notice = "";
         String negativeSubjects = "";
@@ -94,10 +94,10 @@ public class Students {
                         "It is your fault, you lazy, miserable people, " + student.getParentName().toUpperCase()+ " why didn’t you spend your afternoons and weekends teaching your kid " + student.getStudentFirstName().toUpperCase() + " " + student.getStudentLastName().toUpperCase() +  " following subjects:\n"+
                         negativeSubjects + "where he has gotten an F? \nThat was YOUR job - we provided you with books and locked your kid for 6 hours a day, so you can earn money to spend it on the afternoon teachers. Why didn’t you do your job on time? \n" +
                         "Shame. Shame. Shame: oh, yeah, btw, here is a contact list of institutions and people that can provide you with extra help - maybe some of our fellow teachers works there, maybe not):\n" +
-                        "In the name of your beloved First Elite School “We Are Proud That We Treat All Students Equal”,\n"+
+                        "In the name of your beloved First Elite School “" + school1.getSchoolName() + "”,\n"+
                         "\nSincerely Yours," +
-                        "\n\nDr Dipl.Kfm. Max von und zu Mustermann,\n" +
-                        "Director of School \n\n";
+                        "\nDr Dipl.Kfm. Max von und zu Mustermann,\n" +
+                        "Director of School";
             }
             totalpoints += a;
             result += student.getStudentFirstName() + " " + student.getStudentLastName().toUpperCase() + "'s" + " final grade in \"" + subject.getSubjectName() + "\": " + calcGrade(a) + "\n";
