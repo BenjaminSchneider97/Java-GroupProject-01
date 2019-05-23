@@ -85,7 +85,7 @@ public class Students {
         int totalpoints = 0;
 
         for(Subjects subject : allSubjects){
-            System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName +" " + " " + student.getStudentLastName().substring(0, 1) + ".:");
+            System.out.println("Enter the points for the subject \"" + subject.getSubjectName() + "\" for " + student.studentFirstName + " " + student.getStudentLastName().substring(0, 1) + ".:");
             int a = input.nextInt();
             if (a < 50){
                 negativeSubjects += subject.getSubjectName() + ", ";

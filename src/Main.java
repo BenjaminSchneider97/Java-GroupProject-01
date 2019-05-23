@@ -66,7 +66,6 @@ public class Main {
         allSubjects.add(it);
         allSubjects.add(biology);
 
-
         // Student objects
         Students mark = new Students("Mark", "Forster", "Marry Poppins", a1);
         Students jenny = new Students("Jenny", "Tang", "Li-Hung Chang", a2);
