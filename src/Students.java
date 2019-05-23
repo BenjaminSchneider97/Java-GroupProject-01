@@ -110,7 +110,7 @@ public class Students {
                 + result + "\n" + averageString +
                 "\n" + notice;
     }
-        }
+}
 
 
 
