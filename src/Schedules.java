@@ -10,7 +10,7 @@ public class Schedules {
     public void printSchedulePlan(Subjects[][] schedule) {
         System.out.println("Monday\t\tTuesday\t\tWednesday\tThursday\tFriday");
         System.out.println("-------------------------------------------------------------");
-        for(int i = 0; i < schedule[i].length; i++){
+        for(int i = 0; i <= schedule.length; i++){
             System.out.println(schedule[0][i].getSubjectName() + "\t\t" + schedule[1][i].getSubjectName() + "\t\t" + schedule[2][i].getSubjectName() + "\t\t" + schedule[3][i].getSubjectName() + "\t\t" + schedule[4][i].getSubjectName());
         }
     }
