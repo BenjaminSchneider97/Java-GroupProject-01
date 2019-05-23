@@ -3,11 +3,13 @@ public class Homework {
     private String homeworkDescription;
     private Subjects subject;
     private HomeworkSchedule schedule;
+    private Class class1;
 
-    public Homework(String homeworkDescription, Subjects subject, HomeworkSchedule schedule) {
+    public Homework(String homeworkDescription, Subjects subject, HomeworkSchedule schedule, Class class1) {
         this.homeworkDescription = homeworkDescription;
         this.subject = subject;
         this.schedule = schedule;
+        this.class1 = class1;
     }
 
     public String getHomeworkDescription() {
@@ -35,6 +37,7 @@ public class Homework {
     }
 
     public void printHomeworkSchedule(Class class1, Subjects subject) {
-        System.out.println("The homework for " + subject.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + homeworkDescription);
+        if(class)
+        System.out.println("Class: " + this.getClass() + "\nThe homework for " + subject.getSubjectName() + " on the " + getSchedule().getStart() + " due to " + getSchedule().getEnd() + " is: " + "\n" + homeworkDescription);
     }
 }

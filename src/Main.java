@@ -13,21 +13,6 @@ public class Main {
         Subjects it = new Subjects("Info");
         Subjects biology = new Subjects("Biology");
 
-        // Homework schedule
-        HomeworkSchedule hschedule1 = new HomeworkSchedule("27.5.2019", "28.5.2019");
-
-        // Homework objects
-        Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, hschedule1);
-
-        ArrayList<Subjects> allSubjects = new ArrayList<>();
-        allSubjects.add(math);
-        allSubjects.add(german);
-        allSubjects.add(english);
-        allSubjects.add(physics);
-        allSubjects.add(it);
-        allSubjects.add(biology);
-
-
         //Schedules
         Subjects[][] schedule1 = {
                 {math, math, math, math, math, biology},
@@ -61,6 +46,21 @@ public class Main {
         Class a1 = new Class("1A", scheduleA1);
         Class a2 = new Class("2A", scheduleA2);
         Class a3 = new Class("3A", scheduleA3);
+
+        // Homework schedule
+        HomeworkSchedule hschedule1 = new HomeworkSchedule("27.5.2019", "28.5.2019");
+
+        // Homework objects
+        Homework hw_1a = new Homework("Find a solution for calculating the area of the triangles", math, hschedule1, a1);
+
+        ArrayList<Subjects> allSubjects = new ArrayList<>();
+        allSubjects.add(math);
+        allSubjects.add(german);
+        allSubjects.add(english);
+        allSubjects.add(physics);
+        allSubjects.add(it);
+        allSubjects.add(biology);
+
 
         // Student objects
         Students mark = new Students("Mark", "Forster", "Marry", a1);
